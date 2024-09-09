@@ -1,3 +1,3 @@
-# app_ds_server_user_management
+# online_store
 
-backend for the microservice user management of the Hela Ayu App
+backend for the online store application. NodeJs with MySQL
