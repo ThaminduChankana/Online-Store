@@ -241,7 +241,6 @@ const getVendorStatistics = asyncHandler(async (req, res) => {
 
 // Get vendor activity logs (new functionality)
 const getVendorActivityLogs = asyncHandler(async (req, res) => {
-	// Assuming you store logs in a separate collection
 	const activityLogs = await ActivityLog.find({ vendorId: req.params._id });
 	if (!activityLogs.length) {
 		return res.status(404).json({ message: "No activity logs found for this vendor" });

@@ -8,10 +8,12 @@ const cartRoutes = require("./routes/cartRoutes");
 const orderRoutes = require("./routes/orderRoutes");
 const { notFound, errorHandler } = require("./middleware/errorMiddleware");
 const dotenv = require('dotenv');
+const cors = require("cors");
 
 dotenv.config();
 const app = express();
 app.use(express.json());
+app.use("*", cors());
 
 app.get("/", (req, res) => {
 	res.send("API is Running");

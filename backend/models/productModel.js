@@ -69,7 +69,7 @@ const Product = sequelize.define('Product', {
 		type: DataTypes.INTEGER,
 		allowNull: false,
 		references: {
-			model: 'Vendors', // Assumes Vendors is another table in your database
+			model: 'Vendors',
 			key: 'id',
 		},
 	},
